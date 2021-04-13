@@ -1,4 +1,8 @@
 spring:
+  person:
+    age: 20
+    name: zhangsan
+    sex: F
   application:
     name: nacos-provider
   cloud:
