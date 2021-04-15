@@ -15,7 +15,8 @@ public class RedisController {
 
     @GetMapping("/hello")
     public String hello(){
-        Set<String> keys = redisTemplate.keys("*");
+        //Set<String> keys = redisTemplate.keys("*");
+        String name = (String)redisTemplate.opsForValue().get("name");
         return "hello";
     }
 
